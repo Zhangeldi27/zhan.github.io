@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Parallax Global</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style type="text/css">
+        html, body, h1, h2, h3, h4, h5, h6, p, a, div, ul, li, blockquote{
+            padding: 0;
+            margin: 0;
+            font-family: "Arial", "Helvetica", "Sans-serif";
+            font-size: 100%;
+            font-weight: 400;
+            color: #ddd;
+        }
+        html{
+            background-color: #181714;
+        }
+        #wrapper{
+            width: 100%;
+            background: #333;
+            position: relative;
+        }
+        h1, h2, h3, h4{
+            text-transform: capitalize;
+            font-weight: 700;
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+        h1{
+            font-size: 2em;
+            padding-bottom: 5px;
+            padding-top: 40px;
+        }
+        h2{
+            font-size: 1.6em;
+            padding-bottom: 5px;
+            padding-top: 40px;
+        }
+        h3{
+            font-size: 1.15em;
+            padding-bottom: 5px;
+            padding-top: 60px;
+        }
+        h4{
+            color: #aaaaaa;
+            font-size: 1.05em;
+            padding-top: 15px;
+            padding-bottom: 7px;
+        }
+        p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 1.5em;
+            color: #aaaaaa;
+        }
+        b{
+            font-weight: 700;
+            color: #eeeeee;
+        }
+        small{
+            font-size: .7em;
+        }
+        hr{
+            border: 1px, #444444;
+        }
+        .floatRightImg{
+            margin: 10px 20px 10px 20px;
+            float: right;
+        }
+        iframe{
+            padding-top: 50px;
+
+        }
+        header{
+            height: 190px;
+            background-color: #eeeeee;
+            border-top: 11px solid #ef3e36;
+            /* LOGOTIP  */
+        }
+        .first{
+            margin-top: 21px;
+            margin-left: 57px;
+            margin-bottom: 23px;
+        }
+        nav{
+            background: black;
+            border: 1px solid #666666;
+            text-align: center;
+            margin-bottom: none;
+        }
+        header > nav > ul > li > a{
+            background-color: #939598;
+            border: 1px solid #555555;
+            text-decoration: none;
+            width: 140px;
+            padding: 6px 6px;
+            font-size: .75em;
+            display: inline-block;
+            margin-left: -.50em;
+
+        }
+        header > nav > ul > li > a:hover{
+            background-color: #ef3e36;
+            transition: .75s;
+        }
+        header > nav > ul > li > a:active{
+            background-color: #ef3e36;
+            transition: .75s;
+            cursor: default;
+        }
+        header > nav > ul > li{
+            display: inline;
+        }
+        blockquote{
+            font-family: 'Georgia';
+            background-color: #444444;
+            border-top: 1px solid #aaaaaa;
+            font-size: 1.1em;
+            color: #cccccc;
+            margin-bottom: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        footer{
+            background-color: #111111;
+        }
+        .columnWrapper{
+            margin: auto;
+            width: 960px;
+        }
+        footer > div.columnWrapper > div.column{
+            display: inline-block;
+            width: 180px;
+            border-right: 2px solid #222222;
+            vertical-align: top;
+        }
+        footer > div.columnWrapper > div.column:last-child{
+            border-right: none;
+        }
+        .address{
+            color: #888888;
+            font-size: .75em;
+            line-height: 1.6em;
+            margin: auto auto;
+        }
+        div.columnWrapper > div.column > div.address > a{
+            color: #888888;
+            transition: .5s;
+        }
+        div.columnWrapper > div.column > div.address > a:hover{
+            color: #ef3e36;
+        }
+        .copyrightText{
+            padding-top: 40px;
+            padding-bottom: 10px;
+            font-size: .7em;
+            color: #555555;
+            text-align: center;
+            background-color: #111111;
+        }
+         main{
+            width: 1000px;
+            padding-top: 60px;
+            padding-bottom: 100px;
+            margin: auto auto;
+        }
+        
+        
+    </style>
+</head>
+
+
+<body>
+    <!--Begin wrapper-->
+    <div id="wrapper">
+
+        <!--Begin header-->
+        <header>
+            <!--Begin nav-->
+            <img class="first" src="images/parallaxLogo.png" alt="Parallax Global">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="current" href="index.html" tabindex="1" title="Home" target="_self">Home</a>
+                    </li>
+                    <li>
+                        <a class="current" href="about.html" tabindex="2" title="About Parallax" target="_self">About</a>
+                    </li>
+                    <li>
+                        <a class="current" href="parallax-way.html" tabindex="3" title="The Parallax Way" target="_self">The Parallax Way</a>
+                    </li>
+                    <li>
+                        <a class="current" href="energy.html" tabindex="4" title="Energy Holdings" target="_self">Energy Holdings</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End nav-->
+        </header>
+        <!--End header-->
+
+
+        <!--Begin featureImage-->
+        <center><img class="featureImage" src="images/featureImage-Home.jpg" alt="Parallax Global" /></center>
+        <!--End featureImage-->
+
+
+        <!--Begin main-->
+        <main>
+            <h1>Welcome to Parallax Global</h1>
+            <p>We want to help change the world. In seven words, that's the mission, vision, values, drive, difference, and goal of Parallax Global Consulting LLC.</p>
+            <p>We work with leading companies and organizations across the globe, solving problems that are important to those organizations, their customers, and the broader community. Our unique approach and deep expertise and experience in the industries we serve helps us get to the real issues faster, more consistently, and more constructively, we think, than any other consulting firm.</p>
+            <p>We view our clients as colleagues and our engagements as symbols of our clients' trust in our integrity, creativity, and passion to solve the most vexing problems that they face.</p>
+            <p>We are delighted that you have chosen Parallax Global as your career home, and we look forward to the rich experiences that await us both.</p>
+
+
+            <center><iframe class="video" data-lightbox-type="ajax" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sy5fhY83uQ4?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+        </main>
+        <!--End main-->
+
+
+        <!--Begin footer-->
+        <footer>
+            <!--Begin blockquote-->
+            <blockquote>"We believe that, while we can't create perfection, we can strive for it."</blockquote>
+            <!--End blockquotee-->
+                        
+            <!--Begin addresses-->
+            <div class="columnWrapper">
+                <div class="column">
+                    <h4>London</h4>
+                    <div class="address">
+                        10221b Orange St., Piccadilly<br>
+                        London SW1Y 4UH<br>
+                        United Kingdom<br>
+                        44 (20) 7939-7140<br>
+                        <a class="third" href="https://www.google.com/maps/place/51%C2%B030%2736.6%22N+0%C2%B008%2706.6%22W/@51.510165,-0.135173,15z/data=!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:london@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>New York</h4>
+                    <div class="address">
+                        Lever House<br>
+                        390 Park Avenue<br>
+                        New York, NY 10022<br>
+                        United States<br>
+                        1 (212) 555-7272<br>
+                        <a class="third" href="https://www.google.com/maps/place/40+E+73rd+St/@40.772068,-73.964603,17z/data=!4m2!3m1!1s0x89c258eb4d838235:0x2220aa41e00eb8ce" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:newyork@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Paris</h4>
+                    <div class="address">
+                        220 Ave des Champs-Elysées<br>
+                        75008 Paris<br>
+                        France<br>
+                        33 (1) 60-14-77-77<br>
+                        <a class="third" href="https://www.google.com/maps/place/48%C2%B052%2724.0%22N+2%C2%B017%2749.6%22E/@48.873327,2.297117,15z/data=!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:paris@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Moscow</h4>
+                    <div class="address">
+                        61 Tverskaya Blvd<br>
+                        125009 Moscow<br>
+                        Russia<br>
+                        7 (495) 225-5600<br>
+                        <a class="third" href="https://www.google.com/maps/place/55%C2%B046%2710.1%22N+37%C2%B035%2749.4%22E/@55.769469,37.597066,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:moscow@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Singapore</h4>
+                    <div class="address">
+                        5th Floor Hoon-Foi Building<br>
+                        101 Queen St<br>
+                        Financial District<br>
+                        Singapore 19452<br>
+                        Singapore<br>
+                        65 (6) 335-6700<br>
+                        <a class="third" href="https://www.google.com/maps/place/1%C2%B018%2704.2%22N+103%C2%B051%2716.3%22E/@1.301155,103.854528,15z/data=!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:singapore@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!--End addresses-->
+            
+            <p class="copyrightText">This website and its content are copyrights of Parallax Global Consulting LLC — © Parallax Global Consulting LLC 2014. All rights reserved.</p>
+        </footer>
+        <!--End Footer-->
+    </div>
+    <!--End Wrapper-->
+</body>
+
+</html>

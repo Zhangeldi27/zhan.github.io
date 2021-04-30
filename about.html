@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Parallax Global | About</title>
+    <style type="text/css">
+        html, body, h1, h2, h3, h4, h5, h6, p, a, div, ul, li, blockquote{
+            padding: 0;
+            margin: 0;
+            font-family: "Arial", "Helvetica", "Sans-serif";
+            font-size: 100%;
+            font-weight: 400;
+            color: #ddd;
+        }
+        html{
+            background-color: #181714;
+        }
+        #wrapper{
+            width: 100%;
+            background: #333;
+            position: relative;
+        }
+        h1, h2, h3, h4{
+            text-transform: capitalize;
+            font-weight: 700;
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+        h1{
+            font-size: 2em;
+            padding-bottom: 5px;
+            padding-top: 40px;
+        }
+        h2{
+            font-size: 1.6em;
+            padding-bottom: 5px;
+            padding-top: 40px;
+        }
+        h3{
+            font-size: 1.15em;
+            padding-bottom: 5px;
+            padding-top: 60px;
+        }
+        h4{
+            color: #aaaaaa;
+            font-size: 1.05em;
+            padding-top: 15px;
+            padding-bottom: 7px;
+        }
+        p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 1.5em;
+            color: #aaaaaa;
+        }
+        b{
+            font-weight: 700;
+            color: #eeeeee;
+        }
+        small{
+            font-size: .7em;
+        }
+        hr{
+            border: 1px, #444444;
+        }
+        .floatRightImg{
+            margin: 10px 20px 10px 20px;
+            float: right;
+        }
+        iframe{
+            padding-top: 50px;
+        }
+        header{
+            height: 190px;
+            background-color: #eeeeee;
+            border-top: 11px solid #ef3e36;
+            /* LOGOTIP  */
+        }
+        .first{
+            margin-top: 21px;
+            margin-left: 57px;
+            margin-bottom: 23px;
+        }
+        nav{
+            background: black;
+            border: 1px solid #666666;
+            text-align: center;
+            margin-bottom: none;
+        }
+        header > nav > ul > li > a{
+            background-color: #939598;
+            border: 1px solid #555555;
+            text-decoration: none;
+            width: 140px;
+            padding: 6px 6px;
+            font-size: .75em;
+            display: inline-block;
+            margin-left: -.50em;
+
+        }
+        header > nav > ul > li > a:hover{
+            background-color: #ef3e36;
+            transition: .75s;
+        }
+        header > nav > ul > li > a:active{
+        	background-color: #ef3e36;
+            transition: .75s;
+            cursor: default;
+        }
+        header > nav > ul > li{
+            display: inline;
+        }
+        
+        blockquote{
+            font-family: 'Georgia';
+            background-color: #444444;
+            border-top: 1px solid #aaaaaa;
+            font-size: 1.1em;
+            color: #cccccc;
+            margin-bottom: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        footer{
+            background-color: #111111;
+        }
+        .columnWrapper{
+            margin: auto;
+            width: 960px;
+        }
+        footer > div.columnWrapper > div.column{
+            display: inline-block;
+            width: 180px;
+            border-right: 2px solid #222222;
+            vertical-align: top;
+        }
+        footer > div.columnWrapper > div.column:last-child{
+            border-right: none;
+        }
+        .address{
+            color: #888888;
+            font-size: .75em;
+            line-height: 1.6em;
+        }
+        div.columnWrapper > div.column > div.address > a{
+            color: #888888;
+            transition: .5s;
+        }
+        div.columnWrapper > div.column > div.address > a:hover{
+            color: #ef3e36;
+        }
+        .copyrightText{
+            padding-top: 40px;
+            padding-bottom: 10px;
+            font-size: .7em;
+            color: #555555;
+            text-align: center;
+            background-color: #111111;
+        }
+         main{
+            width: 1000px;
+            padding-top: 60px;
+            padding-bottom: 100px;
+            margin: auto auto;
+            
+        }
+        .featureImage{
+            width: 1000px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #555555;
+        }
+        th{
+            padding: 5px 8px 8px 8px;
+            background-color: #222222;
+            border-right: 1px #999999;
+            color: #dddddd;
+            font-size: .9em;
+            font-weight: 700;
+        }
+        td{
+            padding: 10px 8px 8px 8px;
+            border: 1px solid #999999;
+            font-size: .8em;
+        }
+        tr.even{
+            background-color: #666666;
+        }
+        form{
+            border: 1px solid #999999;
+        }
+        form > div{
+            width: 960px;
+            margin: 10px 20px 10px 20px;
+        }
+        label{
+            font-weight: 700;
+        }
+        textarea{
+            width: 300px;
+            padding: 5px;
+            background-color: #eeeeee;
+            font-size: 1em;
+            color: #333333;
+            height: 300px;
+            line-height: 1.2em;
+        }
+        .button{
+            margin-top: 20px;
+            margin-right: 30px;
+            padding: 6px 30px 6px 30px;
+            font-size: .75em;
+            color: white;
+            font-weight: 700;
+            background-color: #555555;
+            border: none;
+        }
+        .button:hover{
+            color: #ef3e36;
+            transition: .75s;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <!--Begin wrapper-->
+    <div id="wrapper">
+
+        <!--Begin header-->
+        <header>
+            <!--Begin nav-->
+            <img class="first" src="images/parallaxLogo.png" alt="Parallax Global">
+            <nav>
+                <ul class="second">
+                    <li>
+                        <a class="current" href="index.html" tabindex="1" title="Home" target="_self">Home</a>
+                    </li>
+                    <li>
+                        <a class="current" href="about.html" tabindex="2" title="About Parallax" target="_self">About</a>
+                    </li>
+                    <li>
+                        <a class="current" href="parallax-way.html" tabindex="3" title="The Parallax Way" target="_self">The Parallax Way</a>
+                    </li>
+                    <li>
+                        <a class="current" href="energy.html" tabindex="4" title="Energy Holdings" target="_self">Energy Holdings</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End nav-->
+        </header>
+        <!--End header-->
+
+
+        <!--Begin featureImage-->
+        <center><img class="featureImage" src="images/featureImage-About.jpg" alt="Parallax Global" /></center>
+        <!--End featureImage-->
+
+
+        <!--main-->
+        <main>
+            <p><b>parallax: noun \ˈpa-rə-ˌlaks\: </b>the apparent displacement or the difference in apparent direction of an object as seen from two different points not on a straight line with the object.</p>
+
+            <h1>Our Approach</h1>
+            <p>One of the primary things that stand out about Parallax Global is our unique point-of-view and approach to consulting engagements.</p>
+            <p>The lens through which we view every consulting engagement is a Parallax View, which of course, as the definition of "parallax" suggests, means that we take two alternate (but not necessarily opposing) views of every problem, and compare and contrast two alternate strategies for approaching the problem. This ensures that individuals, teams and management do not become victims of their own paradigms (read Thomas Kuhn's The Structure of Scientific Revolutions for more on this), that we don't get lazy, and that we can assure our clients of the deepest and most creative approaches to their problems, every time.</p>
+
+            <h2>A Parallax Perspective</h2>
+            <p>As we use the term, we mean taking a look at a task, assignment, problem from two different points-of-view. To do this, we assign two different teams to engage with an assignment and develop their own points of view, and then present their views to three referees, who then decide, based on the information that we have, which is the better initial path to pursue. But that is only the beginning of the process.</p>
+            <img class="floatRightImg" src="images/perspective.jpg" alt="The Parallax Perspective" />
+            <p>Throughout the engagement, we continue to use both points of view as a way of illuminating the "space between them," and achieve greater clarity of observation and effectiveness of action.</p>
+            <p>In this way, we protect ourselves from falling victim to reinforcing our own paradigms.</p>
+            <p>Modeled after the great Greek Philosophy, our Parallax view outlines two opposing approaches to the problems we try to collaborate with our clients and resolve. On one hand we use empiricism, viewing what we know from the physical (senses) perspective. We see, we feel, we acquire through being on the ground, talking to people, observing, touching others creations. On the other hand we use rationalism, thinking, reasoning, hypothesizing and abstracting on<br> the way to determine possible courses of action. We also use ethics, the deep<br> understanding of good and bad, right or wrong, just or not – in short morality.</p>
+            <p>Our views, our processes and our protocols have been honed over and over again, with time, maturing and advancing over time, as we have grown as an organization. We share these with our people, we share it with our clients, and we share it with the world in our quest to Parallax things for the greater good.</p>
+
+            <!-- Table -->
+            <h3>Parallax Global Oil Resources by Region (billion barrels)</h3>
+            <table>
+                <tr>
+                    <th>Region</th>
+                    <th>2000-2005</th>
+                    <th>2005-2010</th>
+                    <th>2010-2013</th>
+                </tr>
+                <tr>
+                    <td>North America</td>
+                    <td>56</td>
+                    <td>65</td>
+                    <td>73</td>
+                </tr>
+                <tr class="even">
+                    <td>South America</td>
+                    <td>32</td>
+                    <td>36</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>14</td>
+                    <td>24</td>
+                    <td>21</td>
+                </tr>
+                <tr class="even">
+                    <td>Middle East</td>
+                    <td>19</td>
+                    <td>12</td>
+                    <td>8</td>
+                </tr>
+            </table>
+
+            <!-- Form -->
+            <h3>Join The Parallax Global Consulting Team</h3>
+
+            <form>
+                <div>
+                <small><p>Parallax Global offers their clients experienced and skilled consultants to meet their operational needs. We offer engineering expertise specifically in drilling, completions and fracture stimulation operations. In addition to engineering work, we provide consultants on location for both drilling and completion operations.</p></small>
+                <small><p>If you are an engineer or a field consultant who is interested in joining Parallax Global, please fill out the contact form below.</p></small>
+
+                <p>
+                    <label for="text_field">First Name:</label>
+                    <br>
+                    <input type="text" name="first_name">
+                    <br>
+                    <label for="text_field">Last Name:</label>
+                    <br>
+                    <input type="text" name="last_name">
+
+                </p>
+                <hr>
+                <p>
+                    <label for="checkbox">Select Areas of Expertise:</label>
+                    <br>
+                    <input id="drilling" type="checkbox" name="checkboxes" value="Drilling">Drilling
+                    <br>
+                    <input type="checkbox" name="checkboxes" value="Engineering">Engineering
+                    <br>
+                    <input type="checkbox" name="checkboxes" value="Field_Consulting">Field Consulting
+                </p>
+                <hr>
+                <p>
+                    <label for="file">Upload Resume:</label>
+                    <br>
+                    <input class="file" type="file" name="file">
+                </p>
+                <hr>
+                <p>
+                    <label for="text_area">Additional Comments:</label>
+                    <br>
+                    <textarea name="text_area"></textarea>
+                </p>
+                <p>
+                    <input class="button" type="reset" value="Clear">
+                    <input class="button" type="submit" value="Submit">
+                </p>
+                </div>
+            </form>
+        </main>
+        <!--main-->
+
+
+        <!--Begin footer-->
+        <footer>
+            <!--Begin blockquote-->
+            <blockquote>"We believe that, while we can't create perfection, we can strive for it."</blockquote>
+            <!--End blockquotee-->
+                        
+            <!--Begin addresses-->
+            <div class="columnWrapper">
+                <div class="column">
+                    <h4>London</h4>
+                    <div class="address">
+                        10221b Orange St., Piccadilly<br>
+                        London SW1Y 4UH<br>
+                        United Kingdom<br>
+                        44 (20) 7939-7140<br>
+                        <a class="third" href="https://www.google.com/maps/place/51%C2%B030%2736.6%22N+0%C2%B008%2706.6%22W/@51.510165,-0.135173,15z/data=!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:london@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>New York</h4>
+                    <div class="address">
+                        Lever House<br>
+                        390 Park Avenue<br>
+                        New York, NY 10022<br>
+                        United States<br>
+                        1 (212) 555-7272<br>
+                        <a class="third" href="https://www.google.com/maps/place/40+E+73rd+St/@40.772068,-73.964603,17z/data=!4m2!3m1!1s0x89c258eb4d838235:0x2220aa41e00eb8ce" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:newyork@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Paris</h4>
+                    <div class="address">
+                        220 Ave des Champs-Elysées<br>
+                        75008 Paris<br>
+                        France<br>
+                        33 (1) 60-14-77-77<br>
+                        <a class="third" href="https://www.google.com/maps/place/48%C2%B052%2724.0%22N+2%C2%B017%2749.6%22E/@48.873327,2.297117,15z/data=!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:paris@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Moscow</h4>
+                    <div class="address">
+                        61 Tverskaya Blvd<br>
+                        125009 Moscow<br>
+                        Russia<br>
+                        7 (495) 225-5600<br>
+                        <a class="third" href="https://www.google.com/maps/place/55%C2%B046%2710.1%22N+37%C2%B035%2749.4%22E/@55.769469,37.597066,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:moscow@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Singapore</h4>
+                    <div class="address">
+                        5th Floor Hoon-Foi Building<br>
+                        101 Queen St<br>
+                        Financial District<br>
+                        Singapore 19452<br>
+                        Singapore<br>
+                        65 (6) 335-6700<br>
+                        <a class="third" href="https://www.google.com/maps/place/1%C2%B018%2704.2%22N+103%C2%B051%2716.3%22E/@1.301155,103.854528,15z/data=!4m2!3m1!1s0x0:0x0" title="Directions" target="_blank">Directions</a><br>
+                        <a class="third" href="mailto:singapore@icarnegie.com?Subject=More%20Info" target="_top">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!--End addresses-->
+            
+            <p class="copyrightText">This website and its content are copyrights of Parallax Global Consulting LLC — © Parallax Global Consulting LLC 2014. All rights reserved.</p>
+        </footer>
+        <!--End Footer-->
+    </div>
+    <!--End Wrapper-->
+</body>
+
+</html>
